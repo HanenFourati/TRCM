@@ -1,0 +1,45 @@
+ .UpEvent-Style{
+    padding: 5%;
+    background-color: whitesmoke;
+ }
+ .UpEvent-Style > p  {
+    padding: 1% 25%;
+}
+.UpEvent-Style > h2 {
+    color: #ffab25;
+    padding: 1% 25%;
+}
+.UpEvent-icon-Style{
+    font-size: 50px;
+    color: rgb(233, 71, 71);
+    border-radius: 5px;
+    padding: 5%;
+}
+.UpEvent-Display-Style{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.UpEvent-Timer-Display-Style{
+    width: 35%;
+    display: flex;
+    flex-direction: row;
+}
+.UpEvent-Name-Display-Style{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 65%;
+}
+.UpEvent-Timer-Divs-Style{
+    height: 80px;
+    width: 80px;
+    border-right:1px dotted #959595;
+    vertical-align: middle;
+}
+.UpEvent-Timer-Divs-Style > p{
+    color: #32313b;
+}
+.left{
+    border-left:1px dotted #959595;
+}

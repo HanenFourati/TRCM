@@ -1,0 +1,33 @@
+.newsLetter_section_style{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #29282c;
+    color: white;
+  }
+  #newsLetter_section_style_partone{
+   width: 50%;
+   align-self: center; 
+   font-size: 30px;
+   font-weight: 300;
+  }
+  #newsLetter_section_style_partone > p{
+    color: #ffab25;
+  }
+  #newsLetter_section_style_parttwo{
+   width: 50%;
+   align-self: center; 
+   font-size: 33px;
+   font-weight: 290;
+  }
+  #newsLetter_input_field{
+    border: 1px solid #ffffff;
+    height: 50px;
+    width: 70%;
+    border-radius: 5px;
+  }
+  #newsLetter_button{
+    vertical-align: bottom;
+    text-align: center;
+    color: rgb(233, 71, 71);
+  }

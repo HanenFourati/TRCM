@@ -1,0 +1,11 @@
+.Partners-Style{
+    padding: 5% 1%;
+}
+.Partners-Style > h2{
+    color: rgb(233, 71, 71);
+}
+.Partners-Images-Style{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}

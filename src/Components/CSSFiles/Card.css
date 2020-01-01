@@ -1,0 +1,36 @@
+ .Card-Style{
+     background-color: #29282c;
+     align-items: center;
+ }
+ .Card-Image-Box-Style{
+    width: 50%;
+    overflow: hidden;
+ }
+ .Card-Info-Box-Style{
+    width: 50%;
+ }
+ .Card-Info-Style{
+    border-left: 1px solid rgb(233, 71, 71);
+    width: 60%;
+    text-align: left;
+    margin: 15%;
+}
+ .Card-Info-Style > p{
+    color: whitesmoke;
+    margin: 10%;
+}
+.Card-Info-Style > h2{
+    color: #ffab25;
+    margin: 10%;
+}
+ .Card-Link-Style{
+    text-decoration: none;
+    border: 1px solid whitesmoke;
+    padding: 2%;
+    color: whitesmoke;
+    margin: 10%;
+} 
+.Card-Link-Style:hover{
+    border: 1px solid rgb(233, 71, 71);
+    color:rgb(233, 71, 71)
+}

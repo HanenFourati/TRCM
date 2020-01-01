@@ -1,0 +1,32 @@
+ .Fileds-Display-Style{
+     padding: 5%;
+ }
+.Fileds-Display-Style > p  {
+    padding: 1% 25%;
+}
+.Fileds-Display-Style > h2 {
+    color: #ffab25;
+    padding: 1% 25%;
+}
+ .Fileds-Display-Style > p {
+    padding-bottom: 4%;
+}
+ .Filed-Display-Style{
+     display: flex;
+     flex-direction: row;
+ }
+.Filed-Display-icon-Style{
+    font-size: 50px;
+    color: rgb(233, 71, 71);
+    border: 1px solid whitesmoke;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    padding: 5%;
+}
+.Filed-Display-icon-Style:hover{
+    border: 1px solid rgb(233, 71, 71);
+    background-color: white;
+    transition: transform 0.9s;
+    transform-style: preserve-3d;
+    transform: rotateY(360deg);
+}
