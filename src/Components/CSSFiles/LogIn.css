@@ -1,0 +1,35 @@
+.Login-Style{
+    background-color: whitesmoke;
+    padding:  5%;
+    
+}
+.Login-Form-Style{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border: 1px dotted #ffab25;
+    padding: 5%;
+}
+.Login-Form-Style > input[type=text] {
+    border: 1px solid rgb(31, 31, 31);
+    margin: 1%;
+    padding: 10px 10px;
+}
+.Login-Form-Style > input[type=password] {
+    border: 1px solid rgb(31, 31, 31);
+    padding: 10px 10px;
+    margin: 1%;
+}
+.Login-Form-Style > button {
+    padding: 10px 10px;
+    margin: 1%;
+    background-color: #ffab25;
+    color: white;
+    border: 1px solid #ffab25;
+}
+.Login-Form-Style > button:hover {
+    padding: 10px 10px;
+    margin: 1%;
+    background-color: white;
+    color: #ffab25;
+}

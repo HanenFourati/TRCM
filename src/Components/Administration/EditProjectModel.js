@@ -2,6 +2,7 @@ import React,{Component} from 'react'
 import Modal from 'react-modal'
 import {FaTimes} from 'react-icons/fa'
 import EditProject from './EditProject' // productid={this.props.productid} 
+import '../CSSFiles/ProjectItem.css'
 class EditProjectModel extends Component{
     constructor () {
         super();
@@ -20,7 +21,7 @@ class EditProjectModel extends Component{
       }
     render(){
         return(
-          <div>
+          <div className="Edit-Model-Style">
                 <button onClick={this.handleOpenModal} className="button_decoration">
                   Edit Project
                 </button>
@@ -28,7 +29,7 @@ class EditProjectModel extends Component{
                    <button className="model_close_button_style" onClick={this.handleCloseModal}>
                        <FaTimes/>
                     </button>
-                    <EditProject projectid={this.props.id} adminid={this.props.adminid}/>
+                    <EditProject projectid={this.props.id} adminid={this.props.adminid} username={this.props.username}/>
                 </Modal>
          </div>
         )

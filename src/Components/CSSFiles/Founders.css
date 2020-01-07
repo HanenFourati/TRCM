@@ -1,0 +1,12 @@
+.Founders-Style{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 2%;
+}
+.Founders-Display-Style{
+    margin: 0.1%;
+}
+.Founders-Display-Style > img{
+    border-radius: 50%;
+}

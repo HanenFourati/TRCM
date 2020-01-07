@@ -1,0 +1,10 @@
+.Work-Grid-Style{
+    background-color: whitesmoke;
+    text-align: justify;
+}
+.Work-Grid-Content-Style{
+    padding: 5%;
+}
+.Work-Grid-Content-Style > h1{
+    padding-bottom: 5%;
+}

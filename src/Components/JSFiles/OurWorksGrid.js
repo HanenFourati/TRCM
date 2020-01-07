@@ -2,6 +2,8 @@ import React, { Component } from "react"
 import OurWorksGridItem from "./OurWorksGridItem.js"
 import { connect } from "react-redux"
 import axios from "axios"
+import '../CSSFiles/WorkGrid.css'
+import Pagination from './Pagination'
 class OurWorkGrid extends Component {
 
   componentDidMount() {
@@ -9,12 +11,17 @@ class OurWorkGrid extends Component {
   }
   render() {
     return (
-      <div>
-        <div>
-          {this.props.ProjectsList.map((e, i) => (
-            <OurWorksGridItem key={i} project={e} />
-          ))}
+      <div className="Work-Grid-Style">
+        <div className="Work-Grid-Content-Style">
+            <h1>OUR WORKS AND PROJECTS</h1>
+            <div className="Work-Grid-List-Style">
+              <Pagination todos={this.props.ProjectsList}/>
+              {/* {this.props.ProjectsList.map((e, i) => (
+                <OurWorksGridItem key={i} project={e} />
+              ))} */}
+            </div>
         </div>
+
       </div>
     )
   }

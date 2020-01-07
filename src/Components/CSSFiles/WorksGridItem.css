@@ -1,0 +1,38 @@
+.Work-Grid-Item-Display{
+    background-color: #29282c;
+    display: flex;
+    flex-direction: row;
+    height: 250px;
+    margin: 2%;
+}
+.Work-Grid-Item-Part-One-Display{
+    width: 30%; 
+    overflow: hidden;
+}
+.Work-Grid-Item-Part-One-Display > img{
+    height: 250px;
+}
+.Work-Grid-Item-Part-Two-Display{
+    width: 70%;
+    border-left: 1px solid rgb(233, 71, 71);
+    margin: 2%;
+}
+.Work-Grid-Item-Part-Two-Content-Display{
+    margin: 2%;
+}
+.Work-Grid-Item-Part-Two-Content-Display > h1{
+    color: #ffab25;
+}
+.Work-Grid-Item-Part-Two-Content-Display > p{
+    color: whitesmoke;
+}
+ .Grid-Link-Style{
+    text-decoration: none;
+    border: 1px solid whitesmoke;
+    padding: 2%;
+    color: whitesmoke;
+} 
+.Grid-Link-Style:hover{
+    border: 1px solid rgb(233, 71, 71);
+    color:rgb(233, 71, 71)
+}

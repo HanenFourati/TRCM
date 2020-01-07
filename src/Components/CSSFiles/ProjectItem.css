@@ -1,0 +1,25 @@
+.Projects-Button-Style{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: baseline;
+}
+.Projects-Button-Style > a {
+    text-decoration: none;
+    color: rgb(233, 71, 71);
+    font-size: 20px;
+}
+.Projects-Button-Style > button {
+    text-decoration: none;
+    border: none;
+    color: #3b9ab0;
+    font-size: 20px;
+    background-color: #29282c;} 
+.Edit-Model-Style > button {
+    text-decoration: none;
+    border: none;
+    color: #ffab25;
+    background-color: #29282c;   
+    font-size: 20px;
+    
+}

@@ -1,0 +1,64 @@
+.Contact-Form-Style{
+    display: flex;
+    flex-direction: row;
+    height: 380px;
+}
+.Contact-Part-One-Form-Style{
+    width: 50%;
+    background-color: #ffab25;
+    
+}
+.Contact-Part-Two-Form-Style{
+    width: 50%;
+    background-color: #3b9ab0;
+}
+.Contact-Part-Two-Form-Style > ul {
+    margin: 10%;
+    list-style: none;
+    text-align: justify;
+    font-size: x-large;
+    font-family: 'Lucida Sans', Verdana, sans-serif;
+}
+.Contact-Part-Two-Link-Form-Style{
+    text-decoration: none;
+    color: white;
+}
+.Contact-Part-Two-Form-Style > ul > li > h5{
+    color:white;
+}
+.Contact-Part-One-Form-Style > h5{
+    color:white;
+}
+.Contact-Part-One-Form-Grid-Style{
+    margin: 10%;
+    display: grid;
+    grid-gap: 10px 10px;
+    grid-template-columns: auto auto;
+    align-items: center;
+}
+
+.Contact-Part-One-Form-Grid-Style > input[type= "text"] {
+    padding: 10px 10px;
+    border: none;
+}
+.Contact-Part-One-Form-Grid-Style > textarea{
+    align-self: center;
+    padding: 10px 10px;
+    border: none;
+}
+.Contact-Part-One-Form-Grid-Style > button{
+    border: none;
+    align-self: center;
+    outline: 0;
+    display: block;
+    padding: 10px 25px;
+    color: white;
+    background-color: #ffab25;
+    border: 1px solid white;
+    text-align: center;
+    cursor: pointer;
+}
+.Contact-Part-One-Form-Grid-Style > button:hover{
+    color: #ffab25;
+    background-color: white;
+}

@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import { withRouter } from 'react-router'
 import axios from "axios"
+import '../CSSFiles/LogIn.css'
 class LogIn extends Component {
     constructor(props) {
         super(props)
@@ -9,7 +10,6 @@ class LogIn extends Component {
           password: "",
           userstable: []
         }
-    
         this.handleSubmit = this.handleSubmit.bind(this)
         this.handleChange = this.handleChange.bind(this)
       }
@@ -31,12 +31,14 @@ class LogIn extends Component {
        let error=document.getElementById("error_message")
        this.state.userstable.map((currentele)=> 
        (currentele.username===this.state.username && currentele.password===this.state.password) ? 
-       this.props.history.push(`/Administration/${currentele._id}`) : error.innerHTML="username or password incorrect" )
+       this.props.history.push(`/Administration/${currentele._id}/${currentele.username}`) : error.innerHTML="username or password incorrect" )
       }
     
       render() {
         return (
-          <div>
+          <div className="Login-Style"> 
+            <div className="Login-Form-Style">  
+            <h1>Log In</h1>
               <input
                 type="text"
                 name="username"
@@ -57,6 +59,7 @@ class LogIn extends Component {
     
               <button onClick={this.handleSubmit}>Login</button>
               <p id="error_message"></p>
+            </div>
           </div>
         )
       }

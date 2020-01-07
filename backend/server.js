@@ -15,6 +15,7 @@ MongoClient.connect(
   (err, client) => {
     assert.equal(err, null, "data base erreur");
     const db = client.db(dataBase);
+
     app.post("/contact/add-message", (req, res) => {
       let newMessage = req.body;
       db.collection("messages").insertOne(newMessage, (err, data) => {
@@ -22,6 +23,7 @@ MongoClient.connect(
         else res.send(data);
       });
     });
+
     app.get("/works", (req, res) => {
       db.collection('projects').find().toArray(
         (err,data)=>{
@@ -45,23 +47,21 @@ MongoClient.connect(
         });
     })
 
-    app.get("/Administration/:id", (req, res) => {
+    app.get("/Administration/:id/:username", (req, res) => {
       db.collection('projects').find().toArray(
         (err,data)=>{
             if (err) res.send("error: can not fetch projects")
             else {res.send(data)}
     });
     });
-
-    app.post("/Administration/:id/add-project", (req, res) => {
+    app.post("/Administration/:id/:username/add-project", (req, res) => {
       let newProject = req.body;
       db.collection("projects").insertOne(newProject, (err, data) => {
         if (err) res.send("cant add projects");
         else res.send(data);
       });
     });
-
-    app.put("/Administration/:id/update-project/:id", (req, res) => {
+    app.put("/Administration/:id/:username/update-project/:id", (req, res) => {
       let editedProject = req.body;
       let id = ObjectID(req.params.id);
       db.collection("projects").findOneAndUpdate(
@@ -73,19 +73,44 @@ MongoClient.connect(
         }
       );
     });
-    app.delete("/Administration/:id/delete-project/:id", (req, res) => {
+    app.delete("/Administration/:id/:username/delete-project/:id", (req, res) => {
       let id = ObjectID(req.params.id);
       db.collection("projects").findOneAndDelete({ _id: id }, (err, data) => {
         if (err) res.send("cant delete project");
         else res.send(data);
       });
     });
-
-    app.get('/Administration/:id/display-project/:id', (req,res) => {
+    app.get('/Administration/:id/:username/display-project/:id', (req,res) => {
       let id = ObjectID(req.params.id);
       db.collection('projects').findOne({_id: id},(err,data)=>{
           if(err)   res.send("error: can not fetch projects")
           else {res.send(data) }})
+      });
+      app.get('/Administration/:id/:username/Event/Edit-UpcommingEvent/', (req,res) => {
+        db.collection('events').find().toArray(
+          (err,data)=>{
+              if (err) res.send("error: can not fetch events")
+              else {res.send(data)}
+        });
+        });
+        app.get("/", (req, res) => {
+          db.collection('events').find().toArray(
+            (err,data)=>{
+                if (err) res.send("error: can not fetch events")
+                else {res.send(data)}
+        });
+        });
+      app.put("/Administration/:id/:username/Event/Edit-UpcommingEvent/:id", (req, res) => {
+        let editedEvents = req.body;
+        let id = ObjectID(req.params.id);
+        db.collection("events").findOneAndUpdate(
+          { _id: id },
+          { $set: { ...editedEvents } },
+          (err, data) => {
+            if (err) res.send("cant edit event");
+            else res.send(data);
+          }
+        );
       });
     }
 );

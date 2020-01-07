@@ -1,24 +1,25 @@
 import React, { Component } from "react"
-import ProjectItem from "./ProjectItem"
 import { connect } from "react-redux"
 import axios from "axios"
+import Pagination from './Pagination.js'
 class ProjectsGridDisplay extends Component {
 
   componentDidMount() {
-    axios.get(`/Administration/`+this.props.adminid).then(res => 
+    axios.get(`/Administration/${this.props.adminid}/${this.props.username}`).then(res => 
     this.props.initProjectsList(res.data)
    
     );
   }
   render() {
     
-    return (
+    return ( 
       <div>
-        <div> 
+        {/* <div> 
           {this.props.ProjectsList.map((e, i) => (
             <ProjectItem adminid={this.props.adminid} key={i} project={e} />
           ))}
-        </div>
+        </div> */}
+        <Pagination todos={this.props.ProjectsList} adminid={this.props.adminid} username={this.props.username}/>
       </div>
     )
   }

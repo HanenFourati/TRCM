@@ -1,0 +1,33 @@
+ .Artical-Style{
+     background-color: whitesmoke;
+     padding: 5%;
+ }
+ /* rgb(233, 71, 71) */
+ .Artical-Style > h1{
+     color: #29282c;
+}
+ .Artical-Intro-Style{
+     border-left:  1px solid #ffab25;
+     text-align: justify;
+ }
+ .Artical-Intro-Style > p{
+    color: #29282c;
+    padding: 2%;
+    font-style: italic;
+}
+.Artical-Content-Style{
+    text-align: justify;
+    margin-bottom: 2%;
+}
+.Image-Gallory-Button{
+    width: 200px;
+    height: 200px;
+    opacity: 0.6;
+}
+ .Image-Gallory-Button:hover {
+  opacity: 0.9;
+} 
+.Image-Gallory-Style{
+    background-color: #29282c;
+    padding: 2%;
+}

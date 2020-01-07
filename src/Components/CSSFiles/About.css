@@ -1,0 +1,60 @@
+.About-Style{
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5%;
+
+}
+.About-Part-One-Style{
+    width: 60%;
+    text-align: justify;
+}
+.About-Part-One-grid-Style{
+    padding: 2%;
+    display: grid;
+    grid-gap: 15px 25px;
+    grid-template-columns: auto auto auto auto;
+    
+
+}
+.About-Part-One-grid-cell-Style{
+    text-align: justify;
+}
+.About-Part-One-Img-Style{
+    width: 30%;
+    height: 30%;
+}
+.About-Part-Two-Style{
+    width: 30%;
+    background-color: rgb(233, 71, 71);
+}
+.About-Part-Two-Para-Style{
+    padding: 3%;
+}
+.About-Part-Two-Img-Style{
+    width: 100%;
+    overflow: hidden;
+}
+.About-Part-Two-Para-Style > h2{
+    color: #ffab25;
+}
+.About-Part-Two-Para-Style > h4{
+    color: white;
+}
+.About-Part-Two-Para-Style > p{
+    color: white;
+}
+  .JoinUs-Button-Style{
+    text-decoration: none;
+    border: 1px solid whitesmoke;
+    padding: 5%;
+    text-align: center;
+    font-size: large;
+    background-color: white;
+    color: rgb(233, 71, 71);
+  }
+  .JoinUs-Button-Style:hover{
+    color: white;
+    background-color: rgb(233, 71, 71);
+  }

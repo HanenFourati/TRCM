@@ -1,12 +1,13 @@
 import React,{Component} from 'react'
 import Modal from 'react-modal'
 import {FaTimes} from 'react-icons/fa'
-import AddProject from './AddProject' // productid={this.props.productid} 
-class AddProjectModel extends Component{
+import EditEvent from './EditEvent'
+import '../CSSFiles/Model.css'
+class EditEventModel extends Component{
     constructor () {
         super();
         this.state = {
-          showModal: false,
+          showModal: false, 
         }
         this.handleOpenModal = this.handleOpenModal.bind(this);
         this.handleCloseModal = this.handleCloseModal.bind(this);
@@ -21,18 +22,19 @@ class AddProjectModel extends Component{
     render(){
         return(
           <div>
-                <button onClick={this.handleOpenModal} className="Model-button-style">
-                  Add New Project
+                <button className="Model-button-style" onClick={this.handleOpenModal}>
+                  Edit Upcomming Event
                 </button>
                 <Modal isOpen={this.state.showModal}>
                    <button className="model_close_button_style" onClick={this.handleCloseModal}>
                        <FaTimes/>
                     </button>
-                    <AddProject adminid={this.props.adminid} username={this.props.username}/>
+                    <EditEvent eventtable={this.props.eventtable} adminid={this.props.adminid} username={this.props.username}/>
                 </Modal>
          </div>
         )
     }
 
+
 }
-export default AddProjectModel
+export default EditEventModel

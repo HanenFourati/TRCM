@@ -1,0 +1,29 @@
+.Location-Style{
+    display: flex;
+    flex-direction: row;
+    background-color: #29282c;
+    height: 380px;
+}
+.Location-Contacts-Style{
+    width: 50%;
+    
+}
+.Location-Contacts-Style > ul {
+    margin: 10%;
+    list-style: none;
+    color: whitesmoke;
+    text-align: justify;
+    font-size: x-large;
+    font-family: 'Lucida Sans', Verdana, sans-serif;
+    
+}
+.Location-Contacts-Style > ul > li > h5{
+    color: #ffab25;
+}
+.Location-Map-Style{
+    width: 50%;
+}
+#gmap_canvas{
+    width: 100%;
+    height: 380px;
+}

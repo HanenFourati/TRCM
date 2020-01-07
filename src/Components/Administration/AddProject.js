@@ -2,13 +2,14 @@ import React from "react"
 import {Link, withRouter} from 'react-router-dom'
 import { connect } from "react-redux"
 import axios from "axios"
+import '../CSSFiles/Model.css'
 class AddProject extends React.Component {
   onAddProject = () => {
     axios
-      .post(`/Administration/${this.props.adminid}/add-project`, this.state)
+      .post(`/Administration/${this.props.adminid}/${this.props.username}/add-project`, this.state)
       .then(() => {
       this.props.onAddProjectReducerAction(this.state)
-      this.props.history.push(`/Administration/${this.props.adminid}`) }
+      this.props.history.push(`/Administration/${this.props.adminid}/${this.props.username}`) }
        )
       .catch(err => alert(err));
   }
@@ -19,22 +20,18 @@ class AddProject extends React.Component {
   }
   render() {
     return (
-      <div>
-        <div>
+      <div className="Model-Style">
           <label>Title</label>
-          <input name="title" onChange={this.onChange} />
-        </div>
-        <div >
+          <input type="text" name="title" onChange={this.onChange} placeholder="Write project title" />
           <label>Picture</label>
-          <input name="picture" onChange={this.onChange} />
-        </div>
-        <div >
+          <input type="text"  name="picture" onChange={this.onChange} placeholder="Project images" />
+          <label>Brief</label>
+          <input type="text"  name="brief" onChange={this.onChange} placeholder="Write project Intro"/>
           <label>Description</label>
-          <input name="description" onChange={this.onChange} />
-        </div>
-        <Link to={`/Administration/${this.props.adminid}/add-project`}>
-        <button onClick={this.onAddProject}>Add Project</button>
-        </Link>
+          <input type="text"  name="description" onChange={this.onChange} placeholder="Write project artical" />
+          <Link to={`/Administration/${this.props.adminid}/${this.props.username}/add-project`}>
+          <button className="Model-button-style" onClick={this.onAddProject}>Add Project</button>
+          </Link>
       </div>
     );
   }

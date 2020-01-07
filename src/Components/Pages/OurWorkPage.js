@@ -9,7 +9,7 @@ function OurWorkPage() {
       <OurWorkGrid />
       <Footer/>
     </div>
-  );
+  )
 }
 
 export default OurWorkPage
