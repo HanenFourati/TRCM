@@ -35,7 +35,10 @@
     100% { left: -300%; }
     }
     div#slider { overflow: hidden; }
-    div#slider figure img { width: 20%; float: left; }
+    div#slider figure img {
+         width: 20%; 
+         float: left; 
+    }
     div#slider figure { 
       position: relative;
       width: 500%;
@@ -45,3 +48,27 @@
       font-size: 0;
       animation: 30s slidy infinite; 
     }
+    @media screen and (max-width: 992px) {
+        .Opening-Style{
+            display: flex;
+            flex-direction: column;
+        }
+        .Opening-Quoet-Style{
+            width: auto;
+            vertical-align: middle;
+        }
+      }
+      @media screen and ( max-width: 1354px)  and (min-width: 1000px) {
+        .Opening-Style{
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .Opening-Quoet-Style{
+            width: auto;
+            vertical-align: middle;
+        }
+        div#slider figure img {
+            display: none;
+       }
+      }

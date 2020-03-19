@@ -3,11 +3,12 @@ import axios from 'axios'
 import {Link,withRouter} from 'react-router-dom'
 import { FaInstagram,FaFacebookSquare,FaYoutubeSquare,FaTwitterSquare} from 'react-icons/fa';
 import '../CSSFiles/Contact.css'
-const secondrow = [ { icon: <FaFacebookSquare/>, text: "Facbook", to: "/"},
+const secondrow = [ { icon: <FaFacebookSquare/>, text: "Facbook", to: "https://www.facebook.com/%D8%A7%D9%84%D9%87%D9%8A%D8%A6%D8%A9-%D8%A7%D9%84%D9%85%D8%AD%D9%84%D9%8A%D8%A9-%D9%84%D9%84%D9%87%D9%84%D8%A7%D9%84-%D8%A7%D9%84%D8%A7%D8%AD%D9%85%D8%B1-%D8%A7%D9%84%D8%AA%D9%88%D9%86%D8%B3%D9%8A-%D8%A8%D8%A7%D9%84%D9%85%D8%AA%D9%84%D9%88%D9%8A-1410435105730978/"},                   
+                    { icon: <FaYoutubeSquare/>,  text: "Youtube", to: "https://www.youtube.com/channel/UCg7eaVk8GzB6EwkjuKu_xMw"},
                     { icon: <FaInstagram/>, text: "Instagram", to: "/"},
                     { icon: <FaTwitterSquare/>, text: "Twitter", to: "/"},
-                    { icon: <FaYoutubeSquare/>,  text: "Youtube", to: "/"}
                 ] 
+var today = new Date()
 class Contact extends Component {
     constructor(props) {
         super(props)
@@ -23,7 +24,8 @@ class Contact extends Component {
       }
       handleChange(event) {
         this.setState({
-          [event.target.name]: event.target.value
+          [event.target.name]: event.target.value,
+          date:  today.getTime()+'-'+today.getDate()+ '-' +  (today.getMonth() + 1) + '-' + today.getFullYear() 
         });
       }
     
@@ -34,7 +36,7 @@ class Contact extends Component {
           })
         .catch(err => {alert(err)})
       }
-    render() {
+    render() { 
         return (
           <div className="Contact-Form-Style">
               <div className="Contact-Part-One-Form-Style">
@@ -54,7 +56,7 @@ class Contact extends Component {
                       {  secondrow.map(
                           (srmobj, i) => {
                               return (
-                              <li><Link className="Contact-Part-Two-Link-Form-Style" to={srmobj.to}>{srmobj.icon}&nbsp;{srmobj.text}</Link></li>
+                              <li><a className="Contact-Part-Two-Link-Form-Style" href={srmobj.to}>{srmobj.icon}&nbsp;{srmobj.text}</a></li>
                                   )
                               }
                           )

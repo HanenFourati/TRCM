@@ -1,3 +1,10 @@
+.newsLetter_section{
+  display: flex;
+  flex-direction: column;
+}
+.newsLetter_msg_section_style{
+  background-color: #29282c;
+}
 .newsLetter_section_style{
     display: flex;
     flex-direction: row;
@@ -30,4 +37,21 @@
     vertical-align: bottom;
     text-align: center;
     color: rgb(233, 71, 71);
+    border: none;
+    outline: 0;
+    font-size: xx-large;
+    background-color: #29282c;
+  }
+  @media screen and (max-width: 992px) {
+    .newsLetter_section_style{
+      display: flex;
+      flex-direction: column;
+      padding: 2%;
+    }
+    #newsLetter_section_style_partone{
+      width: auto;
+     }
+    #newsLetter_section_style_parttwo{
+      width: 100%;
+     }
   }

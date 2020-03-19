@@ -10,7 +10,7 @@
      background-color: #29282c;
      color: rgb(255, 255, 255);
      font-size: 13px;
- }
+ } 
  .Navbar-Part-One-Style{
      padding-left: 5%;
      padding-right: 5%;
@@ -25,7 +25,7 @@
     color: white;
 }
  .Navbar-Part-Two-Style{
-    width: 28%;
+    width: 35%;
     padding: 1% 5%;
     display: flex;
     flex-direction: row;
@@ -57,3 +57,55 @@
  .Navbar-Links-Style:hover{
     text-decoration: underline;
 }
+/**********************************/
+.navBar-Small-Screen {
+    width: 100%;
+    background-color: white;
+    color: #333;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    display: none;
+    height: 0;
+  }
+  .Navs-display-direction-Small-Screen {
+    display: flex;
+    flex-direction: column;
+    float: right;
+  }
+  .button-decoration-Small-Screen {
+    color:  rgb(3, 3, 3);
+    font-size: large;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    padding-right: 30px;
+    padding-top: 15px;
+  }
+  .links-Small-Screen {
+   height: 0;
+   overflow: hidden;
+   list-style-type: none;
+   }
+   .show-nav-Small-Screen {
+     height: auto;
+   }
+   
+@media screen and (max-width: 992px) {
+    .Navbar-One-Style{
+        display: flex;
+        flex-direction: column;
+    } 
+    .Navbar-Part-Two-Style{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+    .navBar-Small-Screen {
+        display: inline;
+    }
+    .navBar-Big-Screen{
+        display: none;
+    }
+  }

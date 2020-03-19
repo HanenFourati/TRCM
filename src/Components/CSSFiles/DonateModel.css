@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat|Shadows+Into+Light&display=swap');
+
+.donate-model-style{
+    margin: 5%;
+    background: white;
+    border: 1px dotted #e94747;
+    padding: 2%;
+    /* border: 1px solid rgb(233, 71, 71); */
+    outline: 0;
+    text-align: center;
+}
+.donate-model-style:hover{
+    border: 1px dotted #ffab25;
+}
+ .donate-model-box-style{
+     background-color: #ffab25 ;
+     padding: 2%;
+ }
+ .donate-model-box-style:hover{
+    background-color: #e94747;
+    padding: 3%;
+}
+ .donate-model-box-content-style{
+    background-color: white;
+    padding: 2%;
+}
+.donate-model-box-contentt-style{
+    border: 1px dotted #e94747;
+    padding: 2%;
+}
+.donate-model-box-contentt-style:hover{
+    border: 1px dotted #ffab25;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -20%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+.donate-model-box-contentt-style > h4{
+    color: black;
+    font-family: 'Shadows Into Light', sans-serif;
+    font-size: x-large;
+    animation: fadeIn 3s ease-in both;
+    animation-delay: 1s;
+}
+.donate-model-box-contentt-style > h5{
+    color: black;
+    font-family: 'Shadows Into Light', sans-serif;
+    font-size: x-large;
+    animation: fadeIn 3s ease-in both;
+    animation-delay: 2s;
+}
+.donate-model-close-button-style{
+    text-align: center;
+    font-family: 'Caveat', sans-serif;
+    color: #e94747;
+    border: none;
+    outline: 0;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: xx-large;
+    animation: fadeInRight 3s ease-in both;
+    animation-delay: 4s;
+}
+@keyframes fadeInRight {
+    0% {
+       opacity: 0;
+       transform: translateX(20px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateX(0);
+    }
+ }

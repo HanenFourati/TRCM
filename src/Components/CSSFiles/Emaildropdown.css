@@ -1,0 +1,34 @@
+.question_answer_style{
+  border-radius: 4px;
+  background-color: #68d5ee;
+  border: none;
+  font-size: 20px;
+  padding: 1%;
+  cursor: pointer;
+  margin: 1%;
+}
+.dropdown-btnsyn {
+    padding: 16px 10px 10px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: none;
+}
+.dropdown-containersyn {
+    display: none;
+    text-align: justify;
+    font-size: 15px;
+    font-family: 'Dancing Script', cursive;
+}
+.dropdown-containersyn > p {
+    color: black;
+}
+.dropdown-containersyn > h4 {
+    color: rgb(233, 71, 71);
+}
+.dropdown-containersyn > p > span {
+    color: #ffab25;
+}

@@ -3,6 +3,7 @@ import {Link, withRouter} from 'react-router-dom'
 import { connect } from "react-redux"
 import axios from "axios"
 import '../CSSFiles/Model.css'
+var today = new Date()
 class AddProject extends React.Component {
   onAddProject = () => {
     axios
@@ -15,13 +16,14 @@ class AddProject extends React.Component {
   }
   onChange = e => {
     this.setState({
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
+      date:  today.getDate()+ '-' +  (today.getMonth() + 1) + '-' + today.getFullYear() 
     })
   }
   render() {
     return (
       <div className="Model-Style">
-          <label>Title</label>
+          <label>Title</label> 
           <input type="text" name="title" onChange={this.onChange} placeholder="Write project title" />
           <label>Picture</label>
           <input type="text"  name="picture" onChange={this.onChange} placeholder="Project images" />

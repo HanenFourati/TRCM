@@ -9,6 +9,8 @@ import AdministarationProjectDisplayPage from './Pages/AdministarationProjectDis
 import AboutUsPage from './Pages/AboutUsPage.js'
 import ContactUsPage from './Pages/ContactUsPage.js'
 import AdministarationEventPage from './Pages/AdministarationEventPage.js'
+import AdministarationMembershipPage from './Pages/AdministarationMembershipPage.js'
+import AdministarationMessagePage from './Pages/AdministarationMessagePage.js'
 const CallContact = () => (
   <ContactUsPage/>
 )
@@ -36,6 +38,8 @@ class Routeurcrtm extends Component {
           <Route   exact path="/works/:id" render={(props)=> <OurWorkItemDisolayPage  id={props.match.params.id} />} />
           <Route   exact  path="/Administration" component={CallLogIn} />
           <Route  exact path="/Administration/:adminid/:username" render={(props)=> <AdministarationPage  adminid={props.match.params.adminid} username={props.match.params.username} />} />
+          <Route  exact path="/Administration/:adminid/:username/memberships" render={(props)=> <AdministarationMembershipPage  adminid={props.match.params.adminid} username={props.match.params.username} />} />
+          <Route  exact path="/Administration/:adminid/:username/messages" render={(props)=> <AdministarationMessagePage  adminid={props.match.params.adminid} username={props.match.params.username} />} />
           <Route  exact path="/Administration/:adminid/:username/Event/Edit-UpcommingEvent" render={(props)=> <AdministarationEventPage  adminid={props.match.params.adminid} username={props.match.params.username} />} />
           <Route  exact path="/Administration/:adminid/:username/display-project/:id" render={(props)=> <AdministarationProjectDisplayPage  adminid={props.match.params.adminid} id={props.match.params.id} username={props.match.params.username} />}/>
           {/* <Route  exact path="/Typagedesattributs" component={CallSynonymePage} />

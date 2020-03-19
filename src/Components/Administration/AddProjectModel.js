@@ -2,6 +2,7 @@ import React,{Component} from 'react'
 import Modal from 'react-modal'
 import {FaTimes} from 'react-icons/fa'
 import AddProject from './AddProject' // productid={this.props.productid} 
+import '../CSSFiles/Model.css'
 class AddProjectModel extends Component{
     constructor () {
         super();
@@ -21,8 +22,8 @@ class AddProjectModel extends Component{
     render(){
         return(
           <div>
-                <button onClick={this.handleOpenModal} className="Model-button-style">
-                  Add New Project
+                <button onClick={this.handleOpenModal} className="Model-button-style" style={{width: "100px"}}>
+                  Add Project
                 </button>
                 <Modal isOpen={this.state.showModal}>
                    <button className="model_close_button_style" onClick={this.handleCloseModal}>

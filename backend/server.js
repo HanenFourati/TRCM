@@ -24,6 +24,14 @@ MongoClient.connect(
       });
     });
 
+    app.post("/Newslettersubscribe", (req, res) => {
+      let newmembership = req.body;
+      db.collection("membership").insertOne(newmembership, (err, data) => {
+        if (err) res.send("cant add membership demand");
+        else res.send(data);
+      });
+    });
+
     app.get("/works", (req, res) => {
       db.collection('projects').find().toArray(
         (err,data)=>{
@@ -111,6 +119,20 @@ MongoClient.connect(
             else res.send(data);
           }
         );
+      });
+      app.get("/Administration/:id/:username/messages", (req, res) => {
+        db.collection('messages').find().toArray(
+          (err,data)=>{
+              if (err) res.send("error: can not fetch messages")
+              else {res.send(data)}
+      });
+      });
+      app.get("/Administration/:id/:username/memberships", (req, res) => {
+        db.collection('membership').find().toArray(
+          (err,data)=>{
+              if (err) res.send("error: can not fetch membership")
+              else {res.send(data)}
+      });
       });
     }
 );

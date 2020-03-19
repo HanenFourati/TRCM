@@ -31,3 +31,8 @@
     background-color: #29282c;
     padding: 2%;
 }
+@media screen and (max-width: 1324px) {
+    .ZoomedImages{
+        width: 90%;
+    }
+}

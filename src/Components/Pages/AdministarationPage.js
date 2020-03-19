@@ -13,6 +13,9 @@ class AdministarationPage extends Component{
               <div style={{padding: "2%", display: "flex"}}>
                   <AddProjectModel adminid={this.props.adminid} username={this.props.username}/>  &nbsp;
                   <Link className="Model-button-style" to={'/Administration/'+this.props.adminid+'/'+this.props.username+'/Event/Edit-UpcommingEvent'}>Event</Link>
+                  <Link className="Model-button-style" to={'/Administration/'+this.props.adminid+'/'+this.props.username+'/memberships'}>Memberships</Link>
+                  <Link className="Model-button-style" to={'/Administration/'+this.props.adminid+'/'+this.props.username+'/messages'}>Messages</Link>
+              
               </div>
               <ProjectsGridDisplay adminid={this.props.adminid} username={this.props.username}/> 
               <Footer/>

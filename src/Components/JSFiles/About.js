@@ -7,6 +7,7 @@ import Unity from '../../Images/Unity.png'
 import Universality from '../../Images/Universality.png'
 import Humanity from '../../Images/Humanity.png'
 import Independence from '../../Images/Independence.png'
+import JoinModel from './JoinModel.js'
 import '../CSSFiles/About.css'
 let AboutTab=[{icon: Impartiality, text: "Impartiality"},{icon: Neutrality, text: "Neutrality"},
                {icon: Independence, text: "Independence"},{icon: Voluntary, text: "Voluntary service"},
@@ -17,7 +18,7 @@ function About() {
     <div className="About-Style">
         <div className="About-Part-One-Style"> 
            <h2>ABOUT US</h2>
-           <p>Vestibulum id ligula porta felis euismod semper. Donec ullamcorper nulla non metus auctor fringilla. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec ullamcorper nulla non metus auctor fringilla. Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla sed consectetur. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+           <p>Tunisian red crescent in Metloui is  a part of the International Federation of Red Cross and Red Crescent Societies which is the world's largest humanitarian network that reaches 150 million people in 192 National Societies through the work of over 13,7 million volunteers. It is based on fundamental principles: </p>
            <div>
                <div className="About-Part-One-grid-Style">
                     {AboutTab.map((item)=>{
@@ -30,15 +31,16 @@ function About() {
                     })}
                </div>
            </div>
-           <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Qui ipsorum lingua Celtae, nostra Galli appellantur. Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae. Contra legem facit qui id facit quod lex prohibet. Magna pars studiorum, prodita quaerimus. Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae.</p>
+           <p>Our mission is to support locals people in Metlaoui. We act during and after disasters and health emergencies to meet the needs and improve the lives of vulnerable people. our collective plan of action to tackle the major humanitarian challenges for Metloui local families. Our strength is in our volunteer network, our community-based expertise, and professionals.</p>
         </div>
         <div className="About-Part-Two-Style">
             <img src={Volunteer} alt="" className="About-Part-Two-Img-Style"/>
             <div className="About-Part-Two-Para-Style">
                <h2>VOLUNTEER NEEDED</h2>
                <h4>WELCOME TO US</h4>
-               <p>Vestibulum id ligula porta felis euismod semper donec ullamcorper nulla non metus auctor fringilla maecenas sed diam eget risus.</p>
-               <button className="JoinUs-Button-Style">JOIN IN</button>
+               <p>Your time and talent can make a real difference in people’s lives. We welcome you to join us</p>
+               
+               <JoinModel/>
             </div>
         </div>
     </div>

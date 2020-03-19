@@ -15,8 +15,6 @@
     display: grid;
     grid-gap: 15px 25px;
     grid-template-columns: auto auto auto auto;
-    
-
 }
 .About-Part-One-grid-cell-Style{
     text-align: justify;
@@ -57,4 +55,26 @@
   .JoinUs-Button-Style:hover{
     color: white;
     background-color: rgb(233, 71, 71);
+  }
+  @media screen and (max-width: 992px) {
+    .About-Style{
+        display: flex;
+        flex-direction: column;
+    }
+    .About-Part-One-grid-Style{
+        padding: 2%;
+        display: grid;
+        grid-gap: 15px 25px;
+        grid-template-columns: auto auto;
+    }
+    .About-Part-Two-Style{
+        width: auto;
+    }
+    .About-Part-One-grid-cell-Style{
+        text-align: center;
+    }
+    .About-Part-One-Style{
+        width: 100%;
+        text-align: center;
+    }
   }

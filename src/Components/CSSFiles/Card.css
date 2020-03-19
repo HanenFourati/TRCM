@@ -34,3 +34,22 @@
     border: 1px solid rgb(233, 71, 71);
     color:rgb(233, 71, 71)
 }
+@media screen and (max-width: 992px) {
+    .Card-Image-Box-Style{
+        width: 99%;
+        overflow: hidden;
+     }
+    .Card-Info-Box-Style{
+        width: auto;
+     }
+    .Card-Info-Style{
+        width: auto;
+        margin: 10%;
+    }
+     .Card-Info-Style > p{
+        margin: 5%;
+    }
+    .Card-Info-Style > h2{
+        margin: 5%;
+    }
+  }

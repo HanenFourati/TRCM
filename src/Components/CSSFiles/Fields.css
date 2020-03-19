@@ -3,13 +3,11 @@
  }
 .Fileds-Display-Style > p  {
     padding: 1% 25%;
+    padding-bottom: 4%;
 }
 .Fileds-Display-Style > h2 {
     color: #ffab25;
     padding: 1% 25%;
-}
- .Fileds-Display-Style > p {
-    padding-bottom: 4%;
 }
  .Filed-Display-Style{
      display: flex;
@@ -21,7 +19,7 @@
     border: 1px solid whitesmoke;
     background-color: whitesmoke;
     border-radius: 5px;
-    padding: 5%;
+    padding: 4%;
 }
 .Filed-Display-icon-Style:hover{
     border: 1px solid rgb(233, 71, 71);
@@ -30,3 +28,9 @@
     transform-style: preserve-3d;
     transform: rotateY(360deg);
 }
+@media screen and (max-width: 992px) {
+    .Filed-Display-Style{
+        display: flex;
+        flex-direction: column;
+    }
+  }

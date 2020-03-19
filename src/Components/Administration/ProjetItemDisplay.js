@@ -13,7 +13,7 @@ class ProjectItemDisplay extends React.Component {
     console.log(PJetails)
     return (
       <div className="Artical-Style"> 
-      <h1>{PJetails.title}</h1>
+      <h1>{PJetails.title}</h1> <p>Published {PJetails.date} </p>
       <div className="Artical-Intro-Style"><p>{PJetails.brief}</p></div>
       <div className="Artical-Content-Style"> {PJetails.description}</div>
       <ImagesGallory  todos={[PJetails.picture]} />

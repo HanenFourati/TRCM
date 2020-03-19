@@ -8,3 +8,9 @@
 .Work-Grid-Content-Style > h1{
     padding-bottom: 5%;
 }
+@media only screen and (max-width: 992px) {
+    .Work-Grid-Content-Style > h1{
+        text-align: center;
+    }
+ 
+  }

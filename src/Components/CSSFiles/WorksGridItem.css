@@ -36,3 +36,23 @@
     border: 1px solid rgb(233, 71, 71);
     color:rgb(233, 71, 71)
 }
+@media only screen and (max-width: 1324px) {
+    .Work-Grid-Item-Display{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .Work-Grid-Item-Part-One-Display{
+        width: auto; 
+        overflow: hidden;
+    }
+    .Work-Grid-Item-Part-One-Display > img{
+        height: 300px;
+    }
+    .Work-Grid-Item-Part-Two-Display{
+        width: auto;
+    }
+    .Work-Grid-Item-Part-Two-Content-Display > h1{
+        text-align: center;
+    }
+  }

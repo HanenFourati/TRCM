@@ -1,16 +1,18 @@
 import React from 'react'
+import teammemberone from '../../Images/teammemberone.jpg'
+import teammembertwo from '../../Images/teammembertwo.jpg'
+import teammemberthree from '../../Images/teammemberthree.jpg'
+import teammemberfour from '../../Images/teammemberfour.jpg'
 import '../CSSFiles/Founders.css'
-let FoundersTab=[{img: "http://sitetemplate.demo.ithemeslab.com/riana/assets/images/team/avatar_2.jpg", 
-                 Position: "CEO", Brief: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore"},
-                 {img: "http://sitetemplate.demo.ithemeslab.com/riana/assets/images/team/avatar_2.jpg", 
-                 Position: "CEO", 
-                 Brief: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore"},
-                 {img: "http://sitetemplate.demo.ithemeslab.com/riana/assets/images/team/avatar_2.jpg", 
-                 Position: "CEO", 
-                 Brief: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore"},
-                 {img: "http://sitetemplate.demo.ithemeslab.com/riana/assets/images/team/avatar_2.jpg", 
-                 Position: "CEO", 
-                 Brief: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore"}]
+let FoundersTab=[{img: teammemberone, 
+                 Position: "President", Brief: "Miss Nihel Ben Salim"},
+                 {img: teammembertwo, 
+                 Position: "Vice president", Brief: "Miss Asma Ben Hassan"},
+                 {img: teammemberthree, 
+                 Position: "Disaster Response in charge", Brief: "Abdelhakim Boujellal"},
+                 {img: teammemberfour, 
+                 Position: "Public Relation Responsible", Brief: "Miss Nourhen Shimi "}
+                ]
 function Founders() { 
   return (
     <div>

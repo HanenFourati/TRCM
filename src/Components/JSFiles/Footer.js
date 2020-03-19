@@ -8,8 +8,8 @@ const firstrow = [ { text: 'Home', to: '/'},
                    { text: 'Our works', to: '/works'}
                 ]
 const secondrow = [ { icon: <FaMapMarkerAlt className="footer_icon_style"/>, text: 'Metlaoui, 2130, TN'},
-                    { icon: <FaEnvelope className="footer_icon_style"/>, text: 'crtm.info@gmail.com'},
-                    { icon: <FaPhone className="footer_icon_style"/>, text: '(+216) 51 759 477'}
+                    { icon: <FaEnvelope className="footer_icon_style"/>, text: 'croissant.rouge.metlaoui@gmail.com'},
+                    { icon: <FaPhone className="footer_icon_style"/>, text: '(+216) 21 746 129'}
                 ] 
 class Footer extends Component {
     render () {
@@ -19,10 +19,8 @@ class Footer extends Component {
                     <div className="footer_section_style_partone">
                         <div id="footer_logo_section_style">
                             <h2 id="footer_logo_style">TRCM</h2>
-                            <p>TED is a nonpartisan nonprofit devoted to spreading ideas, usually in the form of short, powerful talks.
-                                TED began in 1984 as a conference where Technology, Entertainment 
-                                and Design converged, and today covers almost all topics — from science to business to global issues</p>
-                            {/* <p> &nbsp; Humanity, Volunteering &amp; Neutrality</p> */}
+                            <p> TRCM - Together, we act before, during and after disasters and health emergencies to improve the lives of vulnerable people. We do so without discrimination as to nationality, race, religious beliefs, class or political opinions. Our strength is in our volunteer network, by improving humanitarian standards, working as partners in development, responding to disasters, supporting healthier and safer communities.
+                                {/* <p> &nbsp; Humanity, Volunteering &amp; Neutrality</p> */}</p>
                         </div>
                         <div>
                             <ul className="footer_link_style">
@@ -53,7 +51,7 @@ class Footer extends Component {
                     </div>
                     <div className="footer_section_style_partthree">
                         <div>
-                            &copy; {(new Date().getFullYear())} Copyright <Link to="/" style={{textDecoration: "none", color: "rgb(189, 189, 189)"}}> RCM </Link> All rights reserved 
+                            &copy; {(new Date().getFullYear())} Copyright <Link to="/" style={{textDecoration: "none", color: "rgb(189, 189, 189)"}}> TRCM </Link> All rights reserved, Designed by Hanen Fourati
                         </div>
                     </div>
                 </div>

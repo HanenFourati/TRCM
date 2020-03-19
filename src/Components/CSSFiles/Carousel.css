@@ -9,7 +9,7 @@
 }
 .bg-caption{
   position: absolute;
-  top: 70%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   /* z-index: 2; */
@@ -38,3 +38,38 @@
   text-align: center;
   cursor: pointer;
 }
+@media only screen and (max-width: 300px) {
+  .bg-caption{
+    top: 60%;
+    left: 50%;
+  }
+  .bg-text {
+    border: none;
+  }
+}
+@media only screen and (max-width: 375px)  and (min-width: 375px){
+  .bg-caption{
+    top: 60% !important;
+    left: 50%;
+  }
+}
+@media only screen and (max-width: 400px)  and (min-width: 300px) {
+  .bg-caption{
+    top: 75%;
+    left: 50%;
+  }
+}
+@media only screen and (max-width: 600px) and (min-width: 400px) {
+  .bg-caption{
+    top: 60%;
+    left: 50%;
+  }
+}
+
+
+/* @media only screen and (min-width: 1260px) {
+  .bg-caption{
+    top: 35%;
+    left: 50%;
+  }
+} */

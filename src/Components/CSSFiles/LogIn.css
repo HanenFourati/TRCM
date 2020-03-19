@@ -33,3 +33,11 @@
     background-color: white;
     color: #ffab25;
 }
+@media only screen and (max-width: 992px) {
+    .Login-Form-Style{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        border: none;
+    }
+}

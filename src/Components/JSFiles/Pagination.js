@@ -1,5 +1,6 @@
 import React from 'react'
 import OurWorksGridItem from "./OurWorksGridItem.js"
+import LoaderHOC from "./LoaderHoc.js"
 import '../CSSFiles/Pagination.css'
 class Pagination extends React.Component {
   constructor() {
@@ -56,4 +57,4 @@ class Pagination extends React.Component {
   }
 }
 
-export default Pagination
+export default LoaderHOC(Pagination)

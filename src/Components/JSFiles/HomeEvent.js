@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import {FaCalendarAlt} from 'react-icons/fa'
 import axios from 'axios'
-import Timer from './Timer.js'
+import Countdown from './Timer.js'
 import '../CSSFiles/UpEvents.css'
 class HomeEvent extends Component{ 
   constructor(props) { 
@@ -19,6 +19,8 @@ class HomeEvent extends Component{
     .catch(error => {console.log(error)});
    } 
       render () {
+        var d=this.state.eventtable.map((i)=> i.date).toString()
+        console.log(this.state.eventtable.map((i)=> i.date)+"")
         return (
             <div className="UpEvent-Style">
                 <h2>UPCOMMING EVENT</h2>
@@ -28,11 +30,11 @@ class HomeEvent extends Component{
                       <FaCalendarAlt className="UpEvent-icon-Style"/>
                       <h2>{this.state.eventtable.map((i)=> <p>{i.title}</p>)}</h2>
                     </div>
-                    <Timer eventdate={this.state.eventtable.map((i)=> i.date)}/>
+                    <Countdown date={new Date(this.state.eventtable.map((i)=> i.date)+"").getTime()}/> 
                 </div>
             </div>
         )    
       }
-    
+    // 
 }
 export default HomeEvent

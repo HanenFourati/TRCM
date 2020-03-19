@@ -7,6 +7,7 @@ class OurWorksGridItem  extends React.Component {
       <div className="Work-Grid-Item-Display">
         <div className="Work-Grid-Item-Part-One-Display">
           <img src={this.props.project.picture} />
+          {/* {this.props.project.picture.map((i)=>  <img src={i} />)} */}
         </div>
         <div className="Work-Grid-Item-Part-Two-Display">
           <div className="Work-Grid-Item-Part-Two-Content-Display">

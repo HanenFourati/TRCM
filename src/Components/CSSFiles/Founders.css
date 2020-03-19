@@ -9,4 +9,12 @@
 }
 .Founders-Display-Style > img{
     border-radius: 50%;
+    height: 250px;
+    width: 250px;
 }
+@media screen and (max-width: 992px) {
+    .Founders-Style{ 
+        display: flex;
+        flex-direction: column;
+    }
+  }

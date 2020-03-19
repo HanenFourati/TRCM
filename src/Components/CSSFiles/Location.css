@@ -27,3 +27,26 @@
     width: 100%;
     height: 380px;
 }
+@media screen and (max-width: 992px) {
+    .Location-Style{
+        display: flex;
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    .Location-Contacts-Style{
+        width: auto;
+        
+    }
+    .Location-Map-Style{
+        width: auto;
+        height: auto;
+    }
+    #gmap_canvas{
+        width: 100%;
+        height: auto;
+    }
+    .Location-Contacts-Style > ul {
+        margin: none;
+        font-size: large;
+    }
+  }

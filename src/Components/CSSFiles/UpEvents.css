@@ -36,6 +36,7 @@
     width: 80px;
     border-right:1px dotted #959595;
     vertical-align: middle;
+    
 }
 .UpEvent-Timer-Divs-Style > p{
     color: #32313b;
@@ -43,3 +44,23 @@
 .left{
     border-left:1px dotted #959595;
 }
+@media screen and (max-width: 992px) {
+    .UpEvent-Display-Style{
+        display: flex;
+        flex-direction: column;
+    }
+    .UpEvent-Name-Display-Style{
+        display: flex;
+        flex-direction: column;
+    }
+    .UpEvent-Timer-Display-Style{
+        width: auto;
+    }
+    .UpEvent-Timer-Divs-Style{
+        border-right: 1px solid white;
+        
+    }
+    .left{
+        border-left: 1px solid white;
+    }
+  }

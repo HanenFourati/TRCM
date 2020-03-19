@@ -28,7 +28,7 @@ class ImagesGallory extends React.Component {
         const currentTodos = this.props.todos.slice(indexOfFirstTodo, indexOfLastTodo);
     
         const renderTodos = currentTodos.map((e,i ) => {
-          return <img src={e} key={i} />;
+          return <img src={e} className="ZoomedImages" key={i} />;
         });
     
         // Logic for displaying page numbers
